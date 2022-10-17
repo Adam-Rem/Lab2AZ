@@ -62,15 +62,17 @@
             this.comboBox2.Size = new System.Drawing.Size(121, 21);
             this.comboBox2.TabIndex = 1;
             this.comboBox2.Text = "Rozdzielczość";
+            this.comboBox2.SelectedIndexChanged += new System.EventHandler(this.comboBox2_SelectedIndexChanged);
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(49, 149);
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
+            this.label1.Location = new System.Drawing.Point(18, 147);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(39, 13);
+            this.label1.Size = new System.Drawing.Size(207, 25);
             this.label1.TabIndex = 2;
-            this.label1.Text = "CENA:";
+            this.label1.Text = "CENA ZA MONITOR";
             // 
             // Form3
             // 

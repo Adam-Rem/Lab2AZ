@@ -14,11 +14,10 @@ namespace Cwiki2AZ
     {
         
         int b = 0;
-        int c = 0;
         public Form2()
         {
             InitializeComponent();
-            
+            Form1.cena_komp = 0;
 
         }
         private void Form2_Load(object sender, EventArgs e)
@@ -60,104 +59,127 @@ namespace Cwiki2AZ
         {
             if (checkBox1.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 20;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 20;
+
             }
-            else
+            if (checkBox1.Checked == false)
             {
-                Form1.cena_komp = Form1.cena_komp - 20;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp -= 20;
+
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
 
         }
         private void checkBox2_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox2.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 150;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 150;
+
             }
-            else
+            if (checkBox2.Checked == false)
             {
-                Form1.cena_komp = Form1.cena_komp - 150;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp -= 150;
+
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void checkBox3_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox3.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 375;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 375;
+
             }
-            else
+            if (checkBox3.Checked == false)
             {
-                Form1.cena_komp = Form1.cena_komp - 375;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp -= 375;
+
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void checkBox4_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox4.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 35;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 35;
+
             }
-            else
+            if (checkBox4.Checked == false)
             {
-                Form1.cena_komp = Form1.cena_komp - 35;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp -= 35;
+
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void checkBox5_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox5.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 50;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 50;
+
             }
-            else
+            if (checkBox5.Checked == false)
             {
-                Form1.cena_komp = Form1.cena_komp - 50;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp -= 50;
+
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void checkBox6_CheckedChanged(object sender, EventArgs e)
         {
             if (checkBox6.Checked)
             {
-                Form1.cena_komp = Form1.cena_komp + 333;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp += 333;
+                
             }
-            else
+            if(checkBox6.Checked==false)
             {
-                Form1.cena_komp = Form1.cena_komp - 333;
-                CENA2.Text = Form1.cena_komp.ToString() + "zł";
+                Form1.cena_komp  -= 333;
+                
             }
+            CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void radioButton1_CheckedChanged(object sender, EventArgs e)
         {
+            if (radioButton1.Checked)
+            {
+                Form1.cena_komp += 50;
+            }
+            if (radioButton1.Checked == false)
+            {
+                Form1.cena_komp -= 50;
+            }
 
-
-            Form1.cena_komp = Form1.cena_komp + 50 - c;
-            c = 50;
             CENA2.Text = Form1.cena_komp.ToString() + "zł";
             
         }
         private void radioButton2_CheckedChanged(object sender, EventArgs e)
         {
-            Form1.cena_komp = Form1.cena_komp + 250 - c;
-            c = 250;
+            if (radioButton2.Checked)
+            {
+                Form1.cena_komp += 250;
+            }
+            if (radioButton2.Checked == false)
+            {
+                Form1.cena_komp -= 250;
+            }
             CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
         private void radioButton3_CheckedChanged(object sender, EventArgs e)
         {
-            Form1.cena_komp = Form1.cena_komp + 500 - c;
-            c = 500;
+            if (radioButton3.Checked)
+            {
+                Form1.cena_komp += 550;
+            }
+            if (radioButton3.Checked == false)
+            {
+                Form1.cena_komp -= 550;
+            }
             CENA2.Text = Form1.cena_komp.ToString() + "zł";
         }
 
-
+       
     }
 
 }

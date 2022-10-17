@@ -165,17 +165,17 @@
             // 
             this.CENA2.AutoSize = true;
             this.CENA2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.25F);
-            this.CENA2.Location = new System.Drawing.Point(325, 253);
+            this.CENA2.Location = new System.Drawing.Point(199, 269);
             this.CENA2.Name = "CENA2";
-            this.CENA2.Size = new System.Drawing.Size(70, 25);
+            this.CENA2.Size = new System.Drawing.Size(228, 25);
             this.CENA2.TabIndex = 11;
-            this.CENA2.Text = "CENA";
+            this.CENA2.Text = "CENA ZA KOMPUTER";
             // 
             // Form2
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(559, 450);
+            this.ClientSize = new System.Drawing.Size(506, 344);
             this.Controls.Add(this.CENA2);
             this.Controls.Add(this.checkBox6);
             this.Controls.Add(this.checkBox5);

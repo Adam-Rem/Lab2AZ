@@ -15,29 +15,39 @@ namespace Cwiki2AZ
     {
         public static int cena_komp = 0;
         public static int cena_moni = 0;
+        
         public Form1()
         {
             InitializeComponent();
-   
+    
         }
+        
 
         private void label_komp_Click(object sender, EventArgs e)
         {
-            //this.Hide();
+            this.Hide();
             Form2 f2= new Form2();
-            f2.ShowDialog();    
+            f2.ShowDialog();
+            f2 = null;
+            Show();
+            labelkolor.Text = (cena_komp + cena_moni).ToString()+"zł";
         }
 
         private void labelmonitor_Click(object sender, EventArgs e)
         {
+            this.Hide();
             Form3 f3= new Form3();
-            f3.ShowDialog(); 
+            f3.ShowDialog();
+            f3 = null;
+            Show();
+            labelkolor.Text = (cena_komp + cena_moni).ToString() + "zł";
 
         }
 
         private void labelkolor_Click(object sender, EventArgs e)
         {
-            labelkolor.Text = (cena_komp+ cena_moni).ToString();
+            labelkolor.Text = (cena_komp + cena_moni).ToString()+"zł";
         }
+        
     }
 }
